@@ -1,0 +1,6 @@
+# Build artifacts (MSVC)
+*.obj
+*.exe
+*.ilk
+*.pdb
+build/

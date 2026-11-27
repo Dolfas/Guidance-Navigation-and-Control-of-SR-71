@@ -207,9 +207,19 @@ Finally, Figure 4 shows the aircraft tracking the waypoints while controlling bo
       
 
 ## Tech Stack 
-The simulation is written entirely in **C** and depends only on the libraries: `stdio.h` and `math.h`. In contrast the plots were done using python. 
+The simulation is written entirely in **C** and depends only on the libraries: `stdio.h` and `math.h`. In contrast the plots were done using python.
 
-Finally, the use of AI in this project was minimal, either for ideas, helping writing this readme or for generating the plot.ipynb file. 
+To execute the simulation begin by going to the root of the repository and compile with GCC:
+
+*gcc -g simulation.c Dynamics/aircraft_dynamics.c Navigation/aircraft_navigation.c Guidance/aircraft_guidance.c Control/aircraft_control.c -o simulation.exe*
+
+Then run the simulation:
+
+*.\simulation.exe*
+
+
+
+Finally, the use of AI in this project was minimal, either for ideas, to help writing this readme or for generating the python file for the plots.  
 
 
 
